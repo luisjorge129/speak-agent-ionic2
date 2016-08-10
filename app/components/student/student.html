@@ -1,0 +1,14 @@
+<ion-item-sliding (click)="view()"> 
+  <ion-item>
+    <h2>{{student.first_name}} {{student.last_name}}</h2>
+    <p>{{student.dob | date: 'dd/MM/yyyy'}}</p>
+  </ion-item>
+
+  <ion-item-options side="right">
+    <button primary>
+      <ion-icon name="eye"></ion-icon>
+      View
+    </button>
+  </ion-item-options>
+
+ </ion-item-sliding>

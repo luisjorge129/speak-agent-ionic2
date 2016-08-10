@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar speakagent>
+    <ion-title>Student</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+      {{student.first_name}} {{student.last_name}}
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="home" item-left></ion-icon>
+        {{student.grade}}
+      </button>
+
+      <button ion-item>
+        <ion-icon name="calendar" item-left></ion-icon>
+        {{student.dob | date: 'dd/MM/yyyy'}}
+      </button>
+    </ion-list>
+  </ion-card>
+</ion-content>
